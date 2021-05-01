@@ -1,0 +1,11 @@
+<div class="card-columns">
+  <div class="card border-primary" *ngFor="let image of images">
+    <img [src]="image.images.downsized.url" [alt]="image.title" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{image.title}}</h5>
+    </div>
+    <div class="card-footer">
+      <span class="badge rounded-pill bg-primary text-light">{{image.id}}</span>
+    </div>
+  </div>
+</div>

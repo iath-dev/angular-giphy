@@ -1,0 +1,10 @@
+<div class="bg-dark p-3 border-right h-100 min-vh-100 min-vw-20" id="sidebar">
+  <h3 class="text-light">Giphy App</h3>
+  <hr class="text-light" />
+  <!--Historial de búsqueda-->
+  <div class="mt-1 list-group list-group-flush list-reset">
+    <a href="#" class="list-group-item list-group-item-action" *ngFor="let q of history" (click)="execQuery(q)">
+      {{q | titlecase}}
+    </a>
+  </div>
+</div>
